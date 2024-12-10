@@ -6,7 +6,6 @@ from .models import (
     Comentario,
     Detalle,
     Favorito,
-    Menu,
     Rol,
     UsuarioRol
 )
@@ -41,10 +40,6 @@ class FavoritoSerializer(serializers.ModelSerializer):
         model = Favorito
         fields = '__all__'
 
-class MenuSerializer(serializers.ModelSerializer):
-    class Meta:
-        model = Menu
-        fields = '__all__'
 
 class RolSerializer(serializers.ModelSerializer):
     class Meta:

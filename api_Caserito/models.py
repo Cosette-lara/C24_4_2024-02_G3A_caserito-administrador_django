@@ -98,23 +98,6 @@ class Favorito(models.Model):
         managed = False
         db_table = 'favorito'
 
-class Menu(models.Model):
-    pk_menu = models.BigAutoField(primary_key=True)
-    descripcion = models.CharField(max_length=1500)
-    img = models.CharField(max_length=255)
-    nombre = models.CharField(max_length=100)
-    precio = models.BigIntegerField()
-    fk_restaurante = models.ForeignKey(
-        Restaurante,
-        on_delete=models.CASCADE,
-        db_column='fk_restaurante' 
-    )
-
-    class Meta:
-        managed = False
-        db_table = 'menu'
-
-
 class Rol(models.Model):
     pk_rol = models.BigAutoField(primary_key=True)
     role_name = models.CharField(max_length=50)

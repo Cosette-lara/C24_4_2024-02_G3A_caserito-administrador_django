@@ -13,7 +13,6 @@ from .models import (
     Comentario,
     Detalle,
     Favorito,
-    Menu,
     Rol,
     UsuarioRol
 )
@@ -24,7 +23,6 @@ from .serializers import (
     ComentarioSerializer,
     DetalleSerializer,
     FavoritoSerializer,
-    MenuSerializer,
     RolSerializer,
     UsuarioRolSerializer
 )
@@ -53,9 +51,6 @@ class FavoritoViewSet(ModelViewSet):
     queryset = Favorito.objects.all()
     serializer_class = FavoritoSerializer
 
-class MenuViewSet(ModelViewSet):
-    queryset = Menu.objects.all()
-    serializer_class = MenuSerializer
 
 class RolViewSet(ModelViewSet):
     queryset = Rol.objects.all()

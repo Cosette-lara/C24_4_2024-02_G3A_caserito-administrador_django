@@ -8,7 +8,6 @@ router.register(r'calificaciones', views.CalificacionViewSet, basename='califica
 router.register(r'comentarios', views.ComentarioViewSet, basename='comentario')
 router.register(r'detalles', views.DetalleViewSet, basename='detalle')
 router.register(r'favoritos', views.FavoritoViewSet, basename='favorito')
-router.register(r'menus', views.MenuViewSet, basename='menu')
 router.register(r'roles', views.RolViewSet, basename='rol')
 router.register(r'usuario_roles', views.UsuarioRolViewSet, basename='usuario_rol')
 
